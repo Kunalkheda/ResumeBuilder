@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <div class="builder-grid">
+            <form id="resume-form">
+                <div class="form-section">
+                    <h2>Personal Info</h2>
+                    <label>Full Name<input type="text" id="name" required></label>
+                    <label>Email<input type="email" id="email" required></label>
+                    <label>Phone<input type="text" id="phone" required></label>
+                </div>
+                <div class="form-section">
+                    <h2>Summary</h2>
+                    <textarea id="summary" required placeholder="Brief summary about yourself"></textarea>
+                </div>
+                <div class="form-section">
+                    <h2>Experience</h2>
+                    <textarea id="experience" required placeholder="Your work experience"></textarea>
+                </div>
+                <div class="form-section">
+                    <h2>Education</h2>
+                    <textarea id="education" required placeholder="Your education background"></textarea>
+                </div>
+                <div class="form-section">
+                    <h2>Skills</h2>
+                    <textarea id="skills" required placeholder="Your skills (comma separated)"></textarea>
+                </div>
+                <button type="button" onclick="generateResume()">Preview Resume</button>
+            </form>
+            <div class="preview-section">
+                <h2>Live Preview</h2>
+                <div id="resume-preview" class="resume-preview"></div>
+                <button id="download-btn" style="display:none;" onclick="downloadResume()">Download as HTML</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

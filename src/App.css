@@ -1,0 +1,48 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+h1 {
+  text-align: center;
+  color: #1a237e;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.main-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.resume-form {
+  flex: 1 1 350px;
+  min-width: 320px;
+  max-width: 400px;
+  background: #f7f9fa;
+  padding: 24px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+@media (max-width: 900px) {
+  .main-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .app-container {
+    padding: 18px 4vw;
+  }
+}
